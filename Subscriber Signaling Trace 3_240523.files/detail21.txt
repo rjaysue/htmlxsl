@@ -1,0 +1,142 @@
+﻿-----------------Detailed Decode--------------------
+Diameter_Message
+    Notify-Request
+        Version: 1
+        MsgLen : 564
+        flags :[R, P ]
+        Command Code:Notify(323)
+        Application-ID:3GPP_S6A_S6D(16777251)
+        Hop-by-Hop: 0x08790132
+        End-to-End: 0x08790132
+    Session-Id
+        Code:Session-Id(263)
+        flags : [M]
+        length:80
+        UTF8String : mmec10.mmegi8000.mme.epc.mnc014.mcc502.3gppnetwork.org;01182325;00080132
+    Vendor-Specific-Application-Id
+        Code:Vendor-Specific-Application-Id(260)
+        flags : [M]
+        length:32
+        Grouped AVPS
+            Vendor-Id
+                Code:Vendor-Id(266)
+                flags : [M]
+                length:12
+                VendorId : 3GPP(10415)
+            Auth-Application-Id
+                Code:Auth-Application-Id(258)
+                flags : [M]
+                length:12
+                Unsigned32Enum : 3GPP_S6A_S6D(16777251)
+    Auth-Session-State
+        Code:Auth-Session-State(277)
+        flags : [M]
+        length:12
+        Enumerated : NO_STATE_MAINTAINED(1)
+    Origin-Host
+        Code:Origin-Host(264)
+        flags : [M]
+        length:62
+        DiameterIdentity : mmec10.mmegi8000.mme.epc.mnc014.mcc502.3gppnetwork.org
+    Origin-Realm
+        Code:Origin-Realm(296)
+        flags : [M]
+        length:41
+        DiameterIdentity : epc.mnc014.mcc502.3gppnetwork.org
+    Destination-Host
+        Code:Destination-Host(293)
+        flags : [M]
+        length:46
+        DiameterIdentity : uspp.epc.mnc014.mcc502.3gppnetwork.org
+    Destination-Realm
+        Code:Destination-Realm(283)
+        flags : [M]
+        length:41
+        DiameterIdentity : epc.mnc014.mcc502.3gppnetwork.org
+    User-Name
+        Code:User-Name(1)
+        flags : [M]
+        length:23
+        UTF8String : 502141024911642
+    MIP6-Agent-Info
+        Code:MIP6-Agent-Info(486)
+        flags : [M]
+        length:108
+        Grouped AVPS
+            MIP-Home-Agent-Host
+                Code:MIP-Home-Agent-Host(348)
+                flags : [M]
+                length:100
+                Grouped AVPS
+                    Destination-Realm
+                        Code:Destination-Realm(283)
+                        flags : [M]
+                        length:41
+                        DiameterIdentity : epc.mnc014.mcc502.3gppnetwork.org
+                    Destination-Host
+                        Code:Destination-Host(293)
+                        flags : [M]
+                        length:45
+                        DiameterIdentity : pgw.epc.mnc014.mcc502.3gppnetwork.org
+    Visited-Network-Identifier
+        Code:Visited-Network-Identifier(600)
+        flags : [V]
+        length:41
+        Vendor: 3GPP(10415)
+        OctetString : mnc014.mcc502.3gppnetwork.org
+    Context-Identifier
+        Code:Context-Identifier(1423)
+        flags : [V,M]
+        length:16
+        Vendor: 3GPP(10415)
+        Unsigned32 : 1
+    Service-Selection
+        Code:Service-Selection(493)
+        flags : [M]
+        length:11
+        UTF8String : mmu
+    UE-SRVCC-Capability
+        Code:UE-SRVCC-Capability(1615)
+        flags : [V]
+        length:16
+        Vendor: 3GPP(10415)
+        Enumerated : UE-SRVCC-SUPPORTED(1)
+
+-----------------Primitive Code---------------------
+000000  00 00 00 2F D4 40 00 4D 01 00 02 34 C0 00 01 43   .../.@.M...4...C
+000010  01 00 00 23 08 79 01 32 08 79 01 32 00 00 01 07   ...#.y.2.y.2....
+000020  40 00 00 50 6D 6D 65 63 31 30 2E 6D 6D 65 67 69   @..Pmmec10.mmegi
+000030  38 30 30 30 2E 6D 6D 65 2E 65 70 63 2E 6D 6E 63   8000.mme.epc.mnc
+000040  30 31 34 2E 6D 63 63 35 30 32 2E 33 67 70 70 6E   014.mcc502.3gppn
+000050  65 74 77 6F 72 6B 2E 6F 72 67 3B 30 31 31 38 32   etwork.org;01182
+000060  33 32 35 3B 30 30 30 38 30 31 33 32 00 00 01 04   325;00080132....
+000070  40 00 00 20 00 00 01 0A 40 00 00 0C 00 00 28 AF   @.. ....@.....(.
+000080  00 00 01 02 40 00 00 0C 01 00 00 23 00 00 01 15   ....@......#....
+000090  40 00 00 0C 00 00 00 01 00 00 01 08 40 00 00 3E   @...........@..>
+0000a0  6D 6D 65 63 31 30 2E 6D 6D 65 67 69 38 30 30 30   mmec10.mmegi8000
+0000b0  2E 6D 6D 65 2E 65 70 63 2E 6D 6E 63 30 31 34 2E   .mme.epc.mnc014.
+0000c0  6D 63 63 35 30 32 2E 33 67 70 70 6E 65 74 77 6F   mcc502.3gppnetwo
+0000d0  72 6B 2E 6F 72 67 00 00 00 00 01 28 40 00 00 29   rk.org.....(@..)
+0000e0  65 70 63 2E 6D 6E 63 30 31 34 2E 6D 63 63 35 30   epc.mnc014.mcc50
+0000f0  32 2E 33 67 70 70 6E 65 74 77 6F 72 6B 2E 6F 72   2.3gppnetwork.or
+000100  67 00 00 00 00 00 01 25 40 00 00 2E 75 73 70 70   g......%@...uspp
+000110  2E 65 70 63 2E 6D 6E 63 30 31 34 2E 6D 63 63 35   .epc.mnc014.mcc5
+000120  30 32 2E 33 67 70 70 6E 65 74 77 6F 72 6B 2E 6F   02.3gppnetwork.o
+000130  72 67 00 00 00 00 01 1B 40 00 00 29 65 70 63 2E   rg......@..)epc.
+000140  6D 6E 63 30 31 34 2E 6D 63 63 35 30 32 2E 33 67   mnc014.mcc502.3g
+000150  70 70 6E 65 74 77 6F 72 6B 2E 6F 72 67 00 00 00   ppnetwork.org...
+000160  00 00 00 01 40 00 00 17 35 30 32 31 34 31 30 32   ....@...50214102
+000170  34 39 31 31 36 34 32 00 00 00 01 E6 40 00 00 6C   4911642.....@..l
+000180  00 00 01 5C 40 00 00 64 00 00 01 1B 40 00 00 29   ...\@..d....@..)
+000190  65 70 63 2E 6D 6E 63 30 31 34 2E 6D 63 63 35 30   epc.mnc014.mcc50
+0001a0  32 2E 33 67 70 70 6E 65 74 77 6F 72 6B 2E 6F 72   2.3gppnetwork.or
+0001b0  67 00 00 00 00 00 01 25 40 00 00 2D 70 67 77 2E   g......%@..-pgw.
+0001c0  65 70 63 2E 6D 6E 63 30 31 34 2E 6D 63 63 35 30   epc.mnc014.mcc50
+0001d0  32 2E 33 67 70 70 6E 65 74 77 6F 72 6B 2E 6F 72   2.3gppnetwork.or
+0001e0  67 00 00 00 00 00 02 58 80 00 00 29 00 00 28 AF   g......X...)..(.
+0001f0  6D 6E 63 30 31 34 2E 6D 63 63 35 30 32 2E 33 67   mnc014.mcc502.3g
+000200  70 70 6E 65 74 77 6F 72 6B 2E 6F 72 67 00 00 00   ppnetwork.org...
+000210  00 00 05 8F C0 00 00 10 00 00 28 AF 00 00 00 01   ..........(.....
+000220  00 00 01 ED 40 00 00 0B 6D 6D 75 00 00 00 06 4F   ....@...mmu....O
+000230  80 00 00 10 00 00 28 AF 00 00 00 01               ......(.....    
+

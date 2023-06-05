@@ -1,0 +1,35 @@
+﻿-----------------Detailed Decode--------------------
+S1 Application Part
+    0... .... = PDU Extension: no present(0x00)
+    .00. .... = Type of Message : initiatingMessage(0x00)
+    Procedure Code: id-TraceStart(0x1B)
+    01.. .... = CRITICALITY: ignore(0x01)
+    Number of Octets in PDU: 0x28
+    0... .... = Message Extension: no present(0x00)
+    Number IEs in PDU: 0x03
+    MME UE S1AP ID IE
+        id-MME-UE-S1AP-ID: 0x00
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x05
+        MME-UE-S1AP-ID: 83934846
+    eNB UE S1AP ID IE
+        id-eNB-UE-S1AP-ID: 0x08
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x04
+        ENB-UE-S1AP-ID: 4195169
+    Trace Activation IE
+        id-TraceActivation: 0x19
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x10
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = MDT-Configuration: no present(0x00)
+        E-UTRAN-Trace-ID: 05 F2 41 00 2B 69 00 01 (Hex)
+        InterfacesToTrace: E0 (Hex)
+        0010 .... = TraceDepth: maximum(0x02)
+        TraceCollectionEntityIPAddress: 192.168.102.2
+
+-----------------Primitive Code---------------------
+000000  00 1B 40 28 00 00 03 00 00 00 05 C0 05 00 BE 7E   ..@(...........~
+000010  00 08 00 04 80 40 03 61 00 19 40 10 00 05 F2 41   .....@.a..@....A
+000020  00 2B 69 00 01 E0 20 F8 C0 A8 66 02               .+i... ...f.    
+

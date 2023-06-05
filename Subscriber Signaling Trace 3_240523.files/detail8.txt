@@ -1,0 +1,36 @@
+﻿-----------------Detailed Decode--------------------
+ESM information response
+    0000 .... = EPS bearer identity: 0x00
+    .... 0010 = Protocol discriminator: EPS session management messages (0x02)
+    Procedure transaction identity: 0x15
+    ESM Message Type: ESM information response (0xDA)
+    Access Point Name
+        Length of Access Point Name Contents: 4 (Bytes)
+        Access Point Name: mmu
+    Protocol Configuration Options
+        Length of Protocol Configuration Options Contents: 38 (Bytes)
+        1... .... = Extension Flag Bit: 1
+        .000 0... = Spare: 0x00
+        .... .000 = Configuration Protocol: 0
+        Protocol Identifier: IPCP (0x8021)
+            Length of Protocol Identifier Contents: 16 (Bytes)
+            Protocol Identifier Contents: (16 Bytes)
+        Container Identifier: IP address allocation via NAS signalling (0x0A)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: DNS Server IPv6 Address Request (0x03)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: DNS Server IPv4 Address Request (0x0D)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: MS Support of Network Requested Bearer Control indicator (0x05)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: MS support of Local address in TFT indicator (0x11)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: IPv4 Link MTU Request (0x10)
+            Length of Protocol Identifier Contents: 0 (Bytes)
+
+-----------------Primitive Code---------------------
+000000  02 15 DA 28 04 03 6D 6D 75 27 26 80 80 21 10 01   ...(..mmu'&..!..
+000010  01 00 10 81 06 00 00 00 00 83 06 00 00 00 00 00   ................
+000020  0A 00 00 03 00 00 0D 00 00 05 00 00 11 00 00 10   ................
+000030  00                                                .               
+

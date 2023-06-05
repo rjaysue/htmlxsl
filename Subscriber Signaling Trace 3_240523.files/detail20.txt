@@ -1,0 +1,57 @@
+﻿-----------------Detailed Decode--------------------
+Modify Bearer Response
+    GTP Header
+        010. .... = GTP Version: 2
+        ...0 .... = Piggybacking flag: 0
+        .... 1... = TEID flag: 1
+        .... .000 = Spare: 0
+        GTP V2 Message Type: Modify Bearer Response(0x23)
+        Message Length: 47 (Bytes)
+        Tunnel Endpoint Identifier(TEID): 0xD440004D
+        Sequence number: 0x04617A
+        Spare: 0
+    Cause
+        Length: 2 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Cause: Request accepted(0x10)
+        0000 000. = Spare: 0x00
+        .... ...1 = Cause Source: 0x01
+    Bearer Contexts List (num 0):
+        Length: 24 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        EPS Bearer ID
+            Length: 1 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            0000 .... = Spare: 0x00
+            .... 0101 = EPS Bearer ID: 0x05
+        Cause
+            Length: 2 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            Cause: Request accepted(0x10)
+            0000 000. = Spare: 0x00
+            .... ...1 = Cause Source: 0x01
+        S1 SGW F-TEID
+            Length: 9 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            1... .... = V4 Flag: 1
+            .0.. .... = V6 Flag: 0
+            ..00 0001 = Interface Type: S1-U SGW GTP-U interface(0x01)
+            TEID/GRE Key: 0x21F90034
+            IPv4 address: 192.168.56.3
+    Recovery
+        Length: 1 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Restart Counter: 37
+
+-----------------Primitive Code---------------------
+000000  48 23 00 2F D4 40 00 4D 04 61 7A 00 02 00 02 00   H#./.@.M.az.....
+000010  10 01 5D 00 18 00 49 00 01 00 05 02 00 02 00 10   ..]...I.........
+000020  01 57 00 09 00 81 21 F9 00 34 C0 A8 38 03 03 00   .W....!..4..8...
+000030  01 00 25                                          ..%             
+

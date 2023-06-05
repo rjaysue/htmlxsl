@@ -1,0 +1,214 @@
+﻿-----------------Detailed Decode--------------------
+Create Session Request
+    GTP Header
+        010. .... = GTP Version: 2
+        ...0 .... = Piggybacking flag: 0
+        .... 1... = TEID flag: 1
+        .... .000 = Spare: 0
+        GTP V2 Message Type: Create Session Request(0x20)
+        Message Length: 238 (Bytes)
+        Tunnel Endpoint Identifier(TEID): 0x00000000
+        Sequence number: 0x046179
+        Spare: 0
+    IMSI
+        Length: 8 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        IMSI: 502141024911642
+    MSISDN
+        Length: 6 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        MSISDN: 601151424985
+    User Location Info
+        Length: 13 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        00.. .... = Spare: 0
+        ..0. .... = LAI Flag: 0
+        ...1 .... = ECGI Flag: 1
+        .... 1... = TAI Flag: 1
+        .... .0.. = RAI Flag: 0
+        .... ..0. = SAI Flag: 0
+        .... ...0 = CGI Flag: 0
+        0000 .... = MCC digit 2: 0x00
+        .... 0101 = MCC digit 1: 0x05
+        1111 .... = MNC digit 3: 0x0F
+        .... 0010 = MCC digit 3: 0x02
+        0100 .... = MNC digit 2: 0x04
+        .... 0001 = MNC digit 1: 0x01
+        Tracking Area Code: 11371
+        0000 .... = MCC digit 2: 0x00
+        .... 0101 = MCC digit 1: 0x05
+        1111 .... = MNC digit 3: 0x0F
+        .... 0010 = MCC digit 3: 0x02
+        0100 .... = MNC digit 2: 0x04
+        .... 0001 = MNC digit 1: 0x01
+        0000 .... = Spare: 0x00
+        .... 0000 = ECI: 0x00
+        E-UTRAN Cell Identifier: 255755
+    Serving Network
+        Length: 3 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        0000 .... = MCC digit 2: 0x00
+        .... 0101 = MCC digit 1: 0x05
+        1111 .... = MNC digit 3: 0x0F
+        .... 0010 = MCC digit 3: 0x02
+        0100 .... = MNC digit 2: 0x04
+        .... 0001 = MNC digit 1: 0x01
+    RAT Type
+        Length: 1 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        RAT Type: EUTRAN(WB-E-UTRAN)(0x06)
+    Indication
+        Length: 3 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        0... .... = Dual Address Bearer Flag: 0
+        .0.. .... = Direct Tunnel Flag: 0
+        ..0. .... = Handover Indication: 0
+        ...0 .... = Direct Forwarding Indication: 0
+        .... 0... = Operation Indication: 0
+        .... .0.. = Idle mode Signalling Reduction Supported Indication: 0
+        .... ..0. = Idle mode Signalling Reduction Activation Indication: 0
+        .... ...0 = SGW Change Indication: 0
+        0... .... = Subscribed QoS Change Indication: 0
+        .0.. .... = Unauthenticated IMSI: 0
+        ..0. .... = Change F-TEID support indication: 0
+        ...1 .... = Change Reporting support indication: 1
+        .... 1... = Piggybacking Supported: 1
+        .... .0.. = Protocol Type: 0
+        .... ..0. = Scope Indication: 0
+        .... ...0 = MS Validated: 0
+        0... .... = Retrieve Location Indication Flag: 0
+        .0.. .... = Propagate BBAI Information Change: 0
+        ..0. .... = SGW Restoration Needed Indication: 0
+        ...0 .... = Static IPv6 Address Flag: 0
+        .... 0... = Static IPv4 Address Flag: 0
+        .... .0.. = Management Based MDT allowed flag: 0
+        .... ..0. = ISR is activated for the UE: 0
+        .... ...1 = CSG Change Reporting support indication: 1
+    Sender F-TEID for Control Plane
+        Length: 9 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        1... .... = V4 Flag: 1
+        .0.. .... = V6 Flag: 0
+        ..00 1010 = Interface Type: S11 MME GTP-C interface(0x0A)
+        TEID/GRE Key: 0xD440004D
+        IPv4 address: 192.168.24.1
+    PGW S5/S8 Address for Control Plane or PMIP
+        Length: 9 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0001 = Instance Value: 0x01
+        1... .... = V4 Flag: 1
+        .0.. .... = V6 Flag: 0
+        ..00 0111 = Interface Type: S5/S8 PGW GTP-C interface(0x07)
+        TEID/GRE Key: 0x00000000
+        IPv4 address: 192.168.56.2
+    Access Point Name
+        Length: 23 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Access Point Name: mmu.mnc014.mcc502.gprs
+    Selection Mode
+        Length: 1 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Selection Mode: MS or network provided APN, subscribed verified (0x00)
+    PDN Type
+        Length: 1 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        0000 0... = Spare: 0x00
+        .... .001 = IPv4 (0x01)
+    PDN Address Allocation
+        Length: 5 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        0000 0... = Spare: 0x00
+        .... .001 = IPv4 (0x01)
+        IPv4 address: 0.0.0.0
+    Maximum APN Restriction
+        Length: 1 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Restriction Type value: 0
+    Aggregate Maximum Bit Rate (APN-AMBR)
+        Length: 8 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        APN-AMBR for uplink: 2048000kbps
+        APN-AMBR for downlink: 2048000kbps
+    Protocol Configuration Options
+        Length of Protocol Configuration Options Contents: 38 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        1... .... = Extension Flag Bit: 1
+        .000 0... = Spare: 0x00
+        .... .000 = Configuration Protocol: 0
+        Protocol Identifier: IPCP (0x8021)
+            Length of Protocol Identifier Contents: 16 (Bytes)
+            Protocol Identifier Contents: (16 Bytes)
+        Container Identifier: IP address allocation via NAS signalling (0x0A)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: DNS Server IPv6 Address Request (0x03)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: DNS Server IPv4 Address Request (0x0D)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: MS Support of Network Requested Bearer Control indicator (0x05)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: MS support of Local address in TFT indicator (0x11)
+            Length of Container Identifier Contents: 0 (Bytes)
+        Container Identifier: IPv4 Link MTU Request (0x10)
+            Length of Container Identifier Contents: 0 (Bytes)
+    Bearer Contexts List (num 0):
+        Length: 31 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        EPS Bearer ID
+            Length: 1 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            0000 .... = Spare: 0x00
+            .... 0101 = EPS Bearer ID: 0x05
+        Bearer Quality of Service
+            Length: 22 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            00.. .... = PCI: 0
+            ..00 01.. = PL: 1
+            .... ..00 = PVI: 0
+            Label (QCI): 9
+            Maximum bit rate for uplink: 0x00 0x00 0x00 0x00 0x00
+            Maximum bit rate for downlink: 0x00 0x00 0x00 0x00 0x00
+            Guaranteed bit rate for uplink: 0x00 0x00 0x00 0x00 0x00
+            Guaranteed bit rate for downlink: 0x00 0x00 0x00 0x00 0x00
+    UE Time Zone
+        Length: 2 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Time Zone: GMT+08:00 (0x23)
+        0000 00.. = Spare: 0x00
+        .... ..00 = Daylight Saving Time: No adjustment for Daylight Saving Time(0x00)
+
+-----------------Primitive Code---------------------
+000000  48 20 00 EE 00 00 00 00 04 61 79 00 01 00 08 00   H .......ay.....
+000010  05 12 14 20 94 11 46 F2 4C 00 06 00 06 11 15 24   ... ..F.L......$
+000020  94 58 56 00 0D 00 18 05 F2 41 2C 6B 05 F2 41 00   .XV......A,k..A.
+000030  03 E7 0B 53 00 03 00 05 F2 41 52 00 01 00 06 4D   ...S.....AR....M
+000040  00 03 00 00 18 01 57 00 09 00 8A D4 40 00 4D C0   ......W.....@.M.
+000050  A8 18 01 57 00 09 01 87 00 00 00 00 C0 A8 38 02   ...W..........8.
+000060  47 00 17 00 03 6D 6D 75 06 6D 6E 63 30 31 34 06   G....mmu.mnc014.
+000070  6D 63 63 35 30 32 04 67 70 72 73 80 00 01 00 00   mcc502.gprs.....
+000080  63 00 01 00 01 4F 00 05 00 01 00 00 00 00 7F 00   c....O..........
+000090  01 00 00 48 00 08 00 00 1F 40 00 00 1F 40 00 4E   ...H.....@...@.N
+0000a0  00 26 00 80 80 21 10 01 01 00 10 81 06 00 00 00   .&...!..........
+0000b0  00 83 06 00 00 00 00 00 0A 00 00 03 00 00 0D 00   ................
+0000c0  00 05 00 00 11 00 00 10 00 5D 00 1F 00 49 00 01   .........]...I..
+0000d0  00 05 50 00 16 00 04 09 00 00 00 00 00 00 00 00   ..P.............
+0000e0  00 00 00 00 00 00 00 00 00 00 00 00 72 00 02 00   ............r...
+0000f0  23 00                                             #.              
+

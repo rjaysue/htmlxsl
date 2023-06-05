@@ -1,0 +1,19 @@
+﻿-----------------Detailed Decode--------------------
+PDN connectivity request
+    0000 .... = EPS bearer identity: 0x00
+    .... 0010 = Protocol discriminator: EPS session management messages (0x02)
+    Procedure transaction identity: 0x15
+    ESM Message Type: PDN connectivity request (0xD0)
+    0011 .... = PDN Type
+        0... .... = Spare: 0x00
+        .011 .... = PDN Type Value: IPv4v6 (0x03)
+    .... 0001 = Request Type
+        .... 0... = Spare: 0x00
+        .... .001 = Request Type: initial request (0x01)
+    ESM information transfer flag
+        .... 000. = Spare: 0x00
+        .... ...1 = security protected ESM information transfer required (0x01)
+
+-----------------Primitive Code---------------------
+000000  02 15 D0 31 D1                                    ...1.           
+

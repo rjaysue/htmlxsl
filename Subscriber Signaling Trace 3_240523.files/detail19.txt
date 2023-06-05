@@ -1,0 +1,65 @@
+﻿-----------------Detailed Decode--------------------
+Modify Bearer Request
+    GTP Header
+        010. .... = GTP Version: 2
+        ...0 .... = Piggybacking flag: 0
+        .... 1... = TEID flag: 1
+        .... .000 = Spare: 0
+        GTP V2 Message Type: Modify Bearer Request(0x22)
+        Message Length: 37 (Bytes)
+        Tunnel Endpoint Identifier(TEID): 0x34680006
+        Sequence number: 0x04617A
+        Spare: 0
+    Indication
+        Length: 3 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        0... .... = Dual Address Bearer Flag: 0
+        .0.. .... = Direct Tunnel Flag: 0
+        ..0. .... = Handover Indication: 0
+        ...0 .... = Direct Forwarding Indication: 0
+        .... 0... = Operation Indication: 0
+        .... .0.. = Idle mode Signalling Reduction Supported Indication: 0
+        .... ..0. = Idle mode Signalling Reduction Activation Indication: 0
+        .... ...0 = SGW Change Indication: 0
+        0... .... = Subscribed QoS Change Indication: 0
+        .0.. .... = Unauthenticated IMSI: 0
+        ..0. .... = Change F-TEID support indication: 0
+        ...1 .... = Change Reporting support indication: 1
+        .... 0... = Piggybacking Supported: 0
+        .... .0.. = Protocol Type: 0
+        .... ..0. = Scope Indication: 0
+        .... ...0 = MS Validated: 0
+        0... .... = Retrieve Location Indication Flag: 0
+        .0.. .... = Propagate BBAI Information Change: 0
+        ..0. .... = SGW Restoration Needed Indication: 0
+        ...0 .... = Static IPv6 Address Flag: 0
+        .... 0... = Static IPv4 Address Flag: 0
+        .... .0.. = Management Based MDT allowed flag: 0
+        .... ..0. = ISR is activated for the UE: 0
+        .... ...1 = CSG Change Reporting support indication: 1
+    Bearer Contexts List (num 0):
+        Length: 18 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        EPS Bearer ID
+            Length: 1 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            0000 .... = Spare: 0x00
+            .... 0101 = EPS Bearer ID: 0x05
+        S1-U eNodeB F-TEID
+            Length: 9 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            1... .... = V4 Flag: 1
+            .0.. .... = V6 Flag: 0
+            ..00 0000 = Interface Type: S1-U eNodeB GTP-U interface(0x00)
+            TEID/GRE Key: 0x03400361
+            IPv4 address: 192.168.8.86
+
+-----------------Primitive Code---------------------
+000000  48 22 00 25 34 68 00 06 04 61 7A 00 4D 00 03 00   H".%4h...az.M...
+000010  00 10 01 5D 00 12 00 49 00 01 00 05 57 00 09 00   ...]...I....W...
+000020  80 03 40 03 61 C0 A8 08 56                        ..@.a...V       
+

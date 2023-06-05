@@ -1,0 +1,12 @@
+﻿-----------------Detailed Decode--------------------
+Attach complete
+    0000 .... = Security Header Type: Plain NAS message
+    .... 0111 = Protocol discriminator: EPS mobility management messages (0x07)
+    EMM Message Type: Attach complete (0x43)
+    ESM Message container
+        Length of ESM Message container: 3 (Bytes)
+        Content of ESM Message container: 52 00 C2 (Hex)
+
+-----------------Primitive Code---------------------
+000000  07 43 00 03 52 00 C2                              .C..R..         
+

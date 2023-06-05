@@ -1,0 +1,10 @@
+﻿-----------------Detailed Decode--------------------
+ESM information request
+    0000 .... = EPS bearer identity: 0x00
+    .... 0010 = Protocol discriminator: EPS session management messages (0x02)
+    Procedure transaction identity: 0x15
+    ESM Message Type: ESM information request (0xD9)
+
+-----------------Primitive Code---------------------
+000000  02 15 D9                                          ...             
+

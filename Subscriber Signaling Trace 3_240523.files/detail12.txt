@@ -1,0 +1,67 @@
+﻿-----------------Detailed Decode--------------------
+Attach accept
+    0000 .... = Security Header Type: Plain NAS message
+    .... 0111 = Protocol discriminator: EPS mobility management messages (0x07)
+    EMM Message Type: Attach accept (0x42)
+    0000 .... = Spare Half Octet: 0x00
+    .... 0010 = EPS attach result value
+        .... 0... = Spare: 0x00
+        .... .010 = EPS attach result value: combined EPS/IMSI attach (0x02)
+    T3412 value
+        010. .... = Unit: value is incremented in multiples of decihours (0x02)
+        ...0 1001 = Value: 0x09
+    TAI list
+        Length of TAI List contents: 12 (Bytes)
+        0... .... = Spare: 0x00
+        .00. .... = Type of List: 0x00
+        ...0 0011 = Number of Elements: 0x04
+        0000 .... = MCC digit 21: 0x00
+        .... 0101 = MCC digit 11: 0x05
+        1111 .... = MNC digit 31: 0x0F
+        .... 0010 = MCC digit 31: 0x02
+        0100 .... = MNC digit 21: 0x04
+        .... 0001 = MNC digit 11: 0x01
+        TAC1: 0x2C6B
+        TAC2: 0x0000
+        TAC3: 0x270F
+        TAC4: 0x03EF
+    ESM Message container
+        Length of ESM Message container: 105 (Bytes)
+        Content of ESM Message container: 52 15 C1 01 09 17 03 6D 6D 75 06 6D 6E 63 30 31 34 06 6D 63 63 35 30 32 04 67 70 72 73 05 01 0A 09 14 0F 5D 01 00 30 10 23 91 1F 91 97 FE FE 46 48 00 00 00 FA 00 FA 00 32 03 81 5E 06 FF FF 00 00 08 08 58 32 27 22 80 80 21 10 03 01 00 10 81 06 0A 00 03 C8 83 06 0A 00 04 C8 00 0D 04 0A 00 03 C8 00 0D 04 0A 00 04 C8 (Hex)
+    GUTI
+        Length of GUTI: 11 (Bytes)
+        Type of identity: 6 (GUTI)
+        GUTI: 05 F2 41 80 00 10 C0 00 B7 08 (Hex)
+    T3402 value
+        001. .... = Unit: value is incremented in multiples of 1 minute (0x01)
+        ...0 1100 = T3402 value: 0x0C
+    T3423 value
+        001. .... = Unit: value is incremented in multiples of 1 minute (0x01)
+        ...0 1100 = T3423 value: 0x0C
+    EPS network feature support
+        Length of EPS network feature support contents: 1 (Bytes)
+        0... .... = CP IoT: Control plane CIoT EPS optimization not supported (0x00)
+        .0.. .... = ERw/oPDN: EMM-REGISTERED without PDN connection not supported (0x00)
+        ..0. .... = ESRPS: network does not support use of EXTENDED SERVICE REQUEST to request for packet services (0x00)
+        ...0 0... = Location services indicator in CS(CS LCS): no information about CS-LCS (0x00)
+        .... .0.. = Location services indicator in EPC(EPC LCS): not supported (0x00)
+        .... ..0. = Emergency bearer services indicator(EMC BS): not supported (0x00)
+        .... ...1 = IMS VoPS: supported (0x01)
+    Additional update Result
+        1111 .... = Additional update Result :0F (Hex)
+        .... 0... = user plane EPS optimization not accepted (0x00)
+        .... .0.. = control plane CIoT EPS optimization not accepted (0x00)
+        .... ..00 = no additional information (0x00)
+
+-----------------Primitive Code---------------------
+000000  07 42 02 49 0C 03 05 F2 41 2C 6B 00 00 27 0F 03   .B.I....A,k..'..
+000010  EF 00 69 52 15 C1 01 09 17 03 6D 6D 75 06 6D 6E   ..iR......mmu.mn
+000020  63 30 31 34 06 6D 63 63 35 30 32 04 67 70 72 73   c014.mcc502.gprs
+000030  05 01 0A 09 14 0F 5D 01 00 30 10 23 91 1F 91 97   ......]..0.#....
+000040  FE FE 46 48 00 00 00 FA 00 FA 00 32 03 81 5E 06   ..FH.......2..^.
+000050  FF FF 00 00 08 08 58 32 27 22 80 80 21 10 03 01   ......X2'"..!...
+000060  00 10 81 06 0A 00 03 C8 83 06 0A 00 04 C8 00 0D   ................
+000070  04 0A 00 03 C8 00 0D 04 0A 00 04 C8 50 0B F6 05   ............P...
+000080  F2 41 80 00 10 C0 00 B7 08 17 2C 59 2C 64 01 01   .A........,Y,d..
+000090  F0                                                .               
+

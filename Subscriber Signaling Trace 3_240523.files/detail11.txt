@@ -1,0 +1,91 @@
+﻿-----------------Detailed Decode--------------------
+Activate default EPS bearer context request
+    0101 .... = EPS bearer identity: 0x05
+    .... 0010 = Protocol discriminator: EPS session management messages (0x02)
+    Procedure transaction identity: 0x15
+    ESM Message Type: Activate default EPS bearer context request (0xC1)
+    EPS QoS
+        Length of EPS QoS: 1 (Bytes)
+        QCI: 9
+    Access Point Name
+        Length of Access Point Name Contents: 23 (Bytes)
+        Access Point Name: mmu.mnc014.mcc502.gprs
+    PDN address
+        Length of PDN Address: 5 (Bytes)
+        0000 0... = Spare: 0x00
+        .... .001 = PDN Type Value: IPv4 (0x01)
+        IPv4 Address: 10.9.20.15
+    Linked TI
+        Length of Linked TI: 1 (Bytes)
+        0... .... = TI Flag: 0x00
+        .000 .... = TI Value: 0x00
+        .... 0000 = Spare: 0x00
+    Negotiated QoS (R7)
+        Length of Quality of Service: 16 (Bytes)
+        00.. .... = Spare: 0
+        ..10 0... = Delay Class: Delay class 4(best effort) (0x04)
+        .... .011 = Reliability Class: Unacknowledged GTP and LLC; Acknowledged RLC, Protected data (0x03)
+        1001 .... = Peak Throughput: Up to 256 000 octet/s (0x09)
+        .... 0... = Spare: 0
+        .... .001 = Precedence Class: High priority (0x01)
+        000. .... = Spare: 0
+        ...1 1111 = Mean Throughput: Best effort (0x1F)
+        100. .... = Traffic Class: Background class (0x04)
+        ...1 0... = Delivery Order: Without delivery order ('no') (0x02)
+        .... .001 = Delivery of Erroneous SDUs: No detect ('-')
+        Maximum SDU Size: 1502 octets (0x97)
+        Maximum Bit Rate for Uplink: 0xFE
+        Maximum Bit Rate for Downlink: 0xFE
+        0100 .... = Residual Bit Error Rate: 4e-3 (0x04)
+        .... 0110 = SDU Error Ratio: 1e-6 (0x06)
+        0100 10.. = Transfer Delay: 300ms (0x12)
+        .... ..00 = Traffic Handling Priority: Reserved (0x00)
+        Guaranteed Bit Rate for Uplink: Reserved (0x00)
+        Guaranteed Bit Rate for Downlink: Reserved (0x00)
+        000. .... = Spare: 0
+        ...0 .... = Signalling Indication: Not Optimised for signalling traffic (0x00)
+        .... 0000 = Source Statistics Descriptor: unknown (0x00)
+        Extended Maximum Bit Rate for Downlink: 256000kbps
+        Extended Guaranteed Bit Rate for Downlink: 0kbps
+        Extended Maximum Bit Rate for Uplink: 256000kbps
+        Extended Guaranteed Bit Rate for Uplink: 0kbps
+    Negotiated LLC SAPI: 0x03
+        0000 .... = Spare: 0
+        .... 0011 = Negotiated LLC SAPI: 0x03
+    Radio priority
+        .... 0... = Spare: 0x00
+        .... .001 = Radio priority level value: 0x01
+    APN AMBR
+        Length of APN AMBR: 6 (Bytes)
+        APN-AMBR for downlink: 0xFF
+        APN-AMBR for uplink: 0xFF
+        APN-AMBR for downlink (extended): 0x00
+        APN-AMBR for uplink (extended): 0x00
+        APN-AMBR for downlink (extended-2): 2048000kbps
+        APN-AMBR for uplink (extended-2): 2048000kbps
+    ESM cause
+        ESM cause: PDN type IPv4 only allowed (0x32)
+    Protocol Configuration Options
+        Length of Protocol Configuration Options Contents: 34 (Bytes)
+        1... .... = Extension Flag Bit: 1
+        .000 0... = Spare: 0x00
+        .... .000 = Configuration Protocol: 0
+        Protocol Identifier: IPCP (0x8021)
+            Length of Protocol Identifier Contents: 16 (Bytes)
+            Protocol Identifier Contents: (16 Bytes)
+        Container Identifier: DNS Server IPv4 Address (0x0D)
+            Length of Container Identifier Contents: 4 (Bytes)
+            Container Identifier Contents: (4 Bytes)
+        Container Identifier: DNS Server IPv4 Address (0x0D)
+            Length of Container Identifier Contents: 4 (Bytes)
+            Container Identifier Contents: (4 Bytes)
+
+-----------------Primitive Code---------------------
+000000  52 15 C1 01 09 17 03 6D 6D 75 06 6D 6E 63 30 31   R......mmu.mnc01
+000010  34 06 6D 63 63 35 30 32 04 67 70 72 73 05 01 0A   4.mcc502.gprs...
+000020  09 14 0F 5D 01 00 30 10 23 91 1F 91 97 FE FE 46   ...]..0.#......F
+000030  48 00 00 00 FA 00 FA 00 32 03 81 5E 06 FF FF 00   H.......2..^....
+000040  00 08 08 58 32 27 22 80 80 21 10 03 01 00 10 81   ...X2'"..!......
+000050  06 0A 00 03 C8 83 06 0A 00 04 C8 00 0D 04 0A 00   ................
+000060  03 C8 00 0D 04 0A 00 04 C8                        .........       
+

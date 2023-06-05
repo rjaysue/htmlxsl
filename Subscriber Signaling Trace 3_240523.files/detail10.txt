@@ -1,0 +1,125 @@
+﻿-----------------Detailed Decode--------------------
+Create Session Response
+    GTP Header
+        010. .... = GTP Version: 2
+        ...0 .... = Piggybacking flag: 0
+        .... 1... = TEID flag: 1
+        .... .000 = Spare: 0
+        GTP V2 Message Type: Create Session Response(0x21)
+        Message Length: 143 (Bytes)
+        Tunnel Endpoint Identifier(TEID): 0xD440004D
+        Sequence number: 0x046179
+        Spare: 0
+    Cause
+        Length: 2 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Cause: Request accepted(0x10)
+        0000 000. = Spare: 0x00
+        .... ...1 = Cause Source: 0x01
+    Sender F-TEID for Control Plane
+        Length: 9 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        1... .... = V4 Flag: 1
+        .0.. .... = V6 Flag: 0
+        ..00 1011 = Interface Type: S11/S4 SGW GTP-C interface(0x0B)
+        TEID/GRE Key: 0x34680006
+        IPv4 address: 192.168.56.1
+    PGW S5/S8 Address for Control Plane or PMIP
+        Length: 9 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0001 = Instance Value: 0x01
+        1... .... = V4 Flag: 1
+        .0.. .... = V6 Flag: 0
+        ..00 0111 = Interface Type: S5/S8 PGW GTP-C interface(0x07)
+        TEID/GRE Key: 0x21F90034
+        IPv4 address: 192.168.56.2
+    PDN Address Allocation
+        Length: 5 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        0000 0... = Spare: 0x00
+        .... .001 = IPv4 (0x01)
+        IPv4 address: 10.9.20.15
+    APN Restriction
+        Length: 1 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Restriction Type value: 0
+    Protocol Configuration Options
+        Length of Protocol Configuration Options Contents: 34 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        1... .... = Extension Flag Bit: 1
+        .000 0... = Spare: 0x00
+        .... .000 = Configuration Protocol: 0
+        Protocol Identifier: IPCP (0x8021)
+            Length of Protocol Identifier Contents: 16 (Bytes)
+            Protocol Identifier Contents: (16 Bytes)
+        Container Identifier: DNS Server IPv4 Address (0x0D)
+            Length of Container Identifier Contents: 4 (Bytes)
+            Container Identifier Contents: (4 Bytes)
+        Container Identifier: DNS Server IPv4 Address (0x0D)
+            Length of Container Identifier Contents: 4 (Bytes)
+            Container Identifier Contents: (4 Bytes)
+    Bearer Contexts List (num 0):
+        Length: 42 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        EPS Bearer ID
+            Length: 1 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            0000 .... = Spare: 0x00
+            .... 0101 = EPS Bearer ID: 0x05
+        Cause
+            Length: 2 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            Cause: Request accepted(0x10)
+            0000 000. = Spare: 0x00
+            .... ...0 = Cause Source: 0x00
+        S1-U SGW F-TEID
+            Length: 9 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            1... .... = V4 Flag: 1
+            .0.. .... = V6 Flag: 0
+            ..00 0001 = Interface Type: S1-U SGW GTP-U interface(0x01)
+            TEID/GRE Key: 0x21F90034
+            IPv4 address: 192.168.56.3
+        S5/8-U PGW F-TEID
+            Length: 9 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0010 = Instance Value: 0x02
+            1... .... = V4 Flag: 1
+            .0.. .... = V6 Flag: 0
+            ..00 0101 = Interface Type: S5/S8 PGW GTP-U interface(0x05)
+            TEID/GRE Key: 0x21F90034
+            IPv4 address: 192.168.56.2
+        Bearer Flags
+            Length: 1 (Bytes)
+            0000 .... = Spare: 0x00
+            .... 0000 = Instance Value: 0x00
+            0000 00.. = Spare: 0x00
+            .... ..0. = Voice Bearer: 0x00
+            .... ...0 = Prohibit Payload Compression: 0x00
+    Recovery
+        Length: 1 (Bytes)
+        0000 .... = Spare: 0x00
+        .... 0000 = Instance Value: 0x00
+        Restart Counter: 37
+
+-----------------Primitive Code---------------------
+000000  48 21 00 8F D4 40 00 4D 04 61 79 00 02 00 02 00   H!...@.M.ay.....
+000010  10 01 57 00 09 00 8B 34 68 00 06 C0 A8 38 01 57   ..W....4h....8.W
+000020  00 09 01 87 21 F9 00 34 C0 A8 38 02 4F 00 05 00   ....!..4..8.O...
+000030  01 0A 09 14 0F 7F 00 01 00 00 4E 00 22 00 80 80   ..........N."...
+000040  21 10 03 01 00 10 81 06 0A 00 03 C8 83 06 0A 00   !...............
+000050  04 C8 00 0D 04 0A 00 03 C8 00 0D 04 0A 00 04 C8   ................
+000060  5D 00 2A 00 49 00 01 00 05 02 00 02 00 10 00 57   ].*.I..........W
+000070  00 09 00 81 21 F9 00 34 C0 A8 38 03 57 00 09 02   ....!..4..8.W...
+000080  85 21 F9 00 34 C0 A8 38 02 61 00 01 00 00 03 00   .!..4..8.a......
+000090  01 00 25                                          ..%             
+

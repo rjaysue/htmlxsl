@@ -1,0 +1,50 @@
+﻿-----------------Detailed Decode--------------------
+S1 Application Part
+    0... .... = PDU Extension: no present(0x00)
+    .00. .... = Type of Message : initiatingMessage(0x00)
+    Procedure Code: id-uplinkNASTransport(0x0D)
+    01.. .... = CRITICALITY: ignore(0x01)
+    Number of Octets in PDU: 0x66
+    0... .... = Message Extension: no present(0x00)
+    Number IEs in PDU: 0x05
+    MME UE S1AP ID IE
+        id-MME-UE-S1AP-ID: 0x00
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x05
+        MME-UE-S1AP-ID: 83934846
+    eNB UE S1AP ID IE
+        id-eNB-UE-S1AP-ID: 0x08
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x04
+        ENB-UE-S1AP-ID: 4195169
+    NAS PDU IE
+        id-NAS-PDU: 0x1A
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x38
+        NAS-PDU: 27 43 31 00 A2 90 02 15 DA 28 04 03 6D 6D 75 27 26 80 80 21 10 01 01 00 10 81 06 00 00 00 00 83 06 00 00 00 00 00 0A 00 00 03 00 00 0D 00 00 05 00 00 11 00 00 10 00 (Hex)
+    EUTRAN CGI IE
+        id-EUTRAN-CGI: 0x64
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x08
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = IE Extension: no present(0x00)
+        PLMNidentity: 05 F2 41 (Hex)
+        0000 0000 0011 1110 0111 0000 1011 .... = CellIdentity: 00 3E 70 B0 (Hex)
+    TAI IE
+        id-TAI: 0x43
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x06
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = IE Extension: no present(0x00)
+        PLMNidentity: 05 F2 41 (Hex)
+        TAC: 2C 6B (Hex)
+
+-----------------Primitive Code---------------------
+000000  00 0D 40 66 00 00 05 00 00 00 05 C0 05 00 BE 7E   ..@f...........~
+000010  00 08 00 04 80 40 03 61 00 1A 00 38 37 27 43 31   .....@.a...87'C1
+000020  00 A2 90 02 15 DA 28 04 03 6D 6D 75 27 26 80 80   ......(..mmu'&..
+000030  21 10 01 01 00 10 81 06 00 00 00 00 83 06 00 00   !...............
+000040  00 00 00 0A 00 00 03 00 00 0D 00 00 05 00 00 11   ................
+000050  00 00 10 00 00 64 40 08 00 05 F2 41 00 3E 70 B0   .....d@....A.>p.
+000060  00 43 40 06 00 05 F2 41 2C 6B                     .C@....A,k      
+

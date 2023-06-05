@@ -1,0 +1,186 @@
+﻿-----------------Detailed Decode--------------------
+Diameter_Message
+    Notify-Answer
+        Version: 1
+        MsgLen : 360
+        flags :[P ]
+        Command Code:Notify(323)
+        Application-ID:3GPP_S6A_S6D(16777251)
+        Hop-by-Hop: 0x08790132
+        End-to-End: 0x08790132
+    Session-Id
+        Code:Session-Id(263)
+        flags : [M]
+        length:80
+        UTF8String : mmec10.mmegi8000.mme.epc.mnc014.mcc502.3gppnetwork.org;01182325;00080132
+    Vendor-Specific-Application-Id
+        Code:Vendor-Specific-Application-Id(260)
+        flags : [M]
+        length:32
+        Grouped AVPS
+            Vendor-Id
+                Code:Vendor-Id(266)
+                flags : [M]
+                length:12
+                VendorId : 3GPP(10415)
+            Auth-Application-Id
+                Code:Auth-Application-Id(258)
+                flags : [M]
+                length:12
+                Unsigned32Enum : 3GPP_S6A_S6D(16777251)
+    Result-Code
+        Code:Result-Code(268)
+        flags : [M]
+        length:12
+        Unsigned32Enum : DIAMETER_SUCCESS(2001)
+    Auth-Session-State
+        Code:Auth-Session-State(277)
+        flags : [M]
+        length:12
+        Enumerated : NO_STATE_MAINTAINED(1)
+    Origin-Host
+        Code:Origin-Host(264)
+        flags : [M]
+        length:46
+        DiameterIdentity : uspp.epc.mnc014.mcc502.3gppnetwork.org
+    Origin-Realm
+        Code:Origin-Realm(296)
+        flags : [M]
+        length:41
+        DiameterIdentity : epc.mnc014.mcc502.3gppnetwork.org
+    Supported-Features
+        Code:Supported-Features(628)
+        flags : [V]
+        length:56
+        Vendor: 3GPP(10415)
+        Grouped AVPS
+            Vendor-Id
+                Code:Vendor-Id(266)
+                flags : [M]
+                length:12
+                VendorId : 3GPP(10415)
+            Feature-List-ID
+                Code:Feature-List-ID(629)
+                flags : [V]
+                length:16
+                Vendor: 3GPP(10415)
+                Unsigned32 : 1
+            Feature-List
+                Code:Feature-List(630)
+                flags : [V]
+                length:16
+                Vendor: 3GPP(10415)
+                Unsigned32 : -1
+                    Bit 0 = ODB-all-APN :  Set
+                    Bit 1 = ODB-HPLMN-APN :  Set
+                    Bit 2 = ODB-VPLMN-APN :  Set
+                    Bit 3 = ODB-all-OG :  Set
+                    Bit 4 = ODB-all-InternationalOG :  Set
+                    Bit 5 = ODB-all-InternationalOGNotToHPLMN-Country :  Set
+                    Bit 6 = ODB-all-InterzonalOG :  Set
+                    Bit 7 = ODB-all-InterzonalOGNotToHPLMN-Country :  Set
+                    Bit 8 = ODB-all-InterzonalOGAndInternationalOGNotToHPLMN-Country :  Set
+                    Bit 9 = RegSub :  Set
+                    Bit 10 = Trace :  Set
+                    Bit 11 = LCS-all-PrivExcep :  Set
+                    Bit 12 = LCS-Universal :  Set
+                    Bit 13 = LCS-CallSessionRelated :  Set
+                    Bit 14 = LCS-CallSessionUnrelated :  Set
+                    Bit 15 = LCS-PLMNOperator :  Set
+                    Bit 16 = LCS-ServiceType :  Set
+                    Bit 17 = LCS-all-MOLR-SS :  Set
+                    Bit 18 = LCS-BasicSelfLocation :  Set
+                    Bit 19 = LCS-AutonomousSelfLocation :  Set
+                    Bit 20 = LCS-TransferToThirdParty :  Set
+                    Bit 21 = SM-MO-PP :  Set
+                    Bit 22 = Barring-OutgoingCalls :  Set
+                    Bit 23 = BAOC :  Set
+                    Bit 24 = BOIC :  Set
+                    Bit 25 = BOICExHC :  Set
+                    Bit 26 = UE-Reachability-Notification :  Set
+                    Bit 27 = T-ADS Data Retrieval :  Set
+                    Bit 28 = State/Location-Information-Retrieval :  Set
+                    Bit 29 = Partial Purge :  Set
+                    Bit 30 = Local Time Zone Retrieval :  Set
+                    Bit 31 = Additional MSISDN :  Set
+    Supported-Features
+        Code:Supported-Features(628)
+        flags : [V]
+        length:56
+        Vendor: 3GPP(10415)
+        Grouped AVPS
+            Vendor-Id
+                Code:Vendor-Id(266)
+                flags : [M]
+                length:12
+                VendorId : 3GPP(10415)
+            Feature-List-ID
+                Code:Feature-List-ID(629)
+                flags : [V]
+                length:16
+                Vendor: 3GPP(10415)
+                Unsigned32 : 2
+            Feature-List
+                Code:Feature-List(630)
+                flags : [V]
+                length:16
+                Vendor: 3GPP(10415)
+                Unsigned32 : -1
+                    Bit 0 = SMS in MME :  Set
+                    Bit 1 = SMS in SGSN :  Set
+                    Bit 2 = Dia-LCS-all-PrivExcep :  Set
+                    Bit 3 = Dia-LCS-Universal :  Set
+                    Bit 4 = Dia-LCS-CallSessionRelated :  Set
+                    Bit 5 = Dia-LCS-CallSessionUnrelated :  Set
+                    Bit 6 = Dia-LCS-PLMNOperator :  Set
+                    Bit 7 = Dia-LCS-ServiceType :  Set
+                    Bit 8 = Dia-LCS-all-MOLR-SS :  Set
+                    Bit 9 = Dia-LCS- BasicSelfLocation :  Set
+                    Bit 10 = Dia-LCS- AutonomousSelfLocation :  Set
+                    Bit 11 = Dia-LCS- TransferToThirdParty :  Set
+                    Bit 12 = Gdd-in-SGSN :  Set
+                    Bit 13 = Optimized-LCS-Proc-Support :  Set
+                    Bit 14 = SGSN CAMEL Capability :  Set
+                    Bit 15 = ProSe Capability :  Set
+                    Bit 16 = P-CSCF Restoration :  Set
+                    Bit 17 = Reset-IDs :  Set
+                    Bit 18 = Communication-pattern :  Set
+                    Bit 19 = Monitoring-Event :  Set
+                    Bit 20 = Dedicated Core Networks :  Set
+                    Bit 21 = Non-IP PDN Type APNs :  Set
+                    Bit 22 = Non-IP PDP Type APNs :  Set
+                    Bit 23 = Removal of MSISDN :  Set
+                    Bit 24 = Emergency Service Continuity :  Set
+                    Bit 25 = V2X Capability :  Set
+                    Bit 26 = External-Identifier :  Set
+                    Bit 27 = NR as Secondary RAT :  Set
+                    Bit 28 = Unlicensed Spectrum as Secondary RAT :  Set
+                    Bit 29 = Reserved :  Set
+                    Bit 30 = Reserved :  Set
+                    Bit 31 = Reserved :  Set
+
+-----------------Primitive Code---------------------
+000000  00 00 00 2F D4 40 00 4D 01 00 01 68 40 00 01 43   .../.@.M...h@..C
+000010  01 00 00 23 08 79 01 32 08 79 01 32 00 00 01 07   ...#.y.2.y.2....
+000020  40 00 00 50 6D 6D 65 63 31 30 2E 6D 6D 65 67 69   @..Pmmec10.mmegi
+000030  38 30 30 30 2E 6D 6D 65 2E 65 70 63 2E 6D 6E 63   8000.mme.epc.mnc
+000040  30 31 34 2E 6D 63 63 35 30 32 2E 33 67 70 70 6E   014.mcc502.3gppn
+000050  65 74 77 6F 72 6B 2E 6F 72 67 3B 30 31 31 38 32   etwork.org;01182
+000060  33 32 35 3B 30 30 30 38 30 31 33 32 00 00 01 04   325;00080132....
+000070  40 00 00 20 00 00 01 0A 40 00 00 0C 00 00 28 AF   @.. ....@.....(.
+000080  00 00 01 02 40 00 00 0C 01 00 00 23 00 00 01 0C   ....@......#....
+000090  40 00 00 0C 00 00 07 D1 00 00 01 15 40 00 00 0C   @...........@...
+0000a0  00 00 00 01 00 00 01 08 40 00 00 2E 75 73 70 70   ........@...uspp
+0000b0  2E 65 70 63 2E 6D 6E 63 30 31 34 2E 6D 63 63 35   .epc.mnc014.mcc5
+0000c0  30 32 2E 33 67 70 70 6E 65 74 77 6F 72 6B 2E 6F   02.3gppnetwork.o
+0000d0  72 67 00 00 00 00 01 28 40 00 00 29 65 70 63 2E   rg.....(@..)epc.
+0000e0  6D 6E 63 30 31 34 2E 6D 63 63 35 30 32 2E 33 67   mnc014.mcc502.3g
+0000f0  70 70 6E 65 74 77 6F 72 6B 2E 6F 72 67 00 00 00   ppnetwork.org...
+000100  00 00 02 74 80 00 00 38 00 00 28 AF 00 00 01 0A   ...t...8..(.....
+000110  40 00 00 0C 00 00 28 AF 00 00 02 75 80 00 00 10   @.....(....u....
+000120  00 00 28 AF 00 00 00 01 00 00 02 76 80 00 00 10   ..(........v....
+000130  00 00 28 AF FF FF FF FF 00 00 02 74 80 00 00 38   ..(........t...8
+000140  00 00 28 AF 00 00 01 0A 40 00 00 0C 00 00 28 AF   ..(.....@.....(.
+000150  00 00 02 75 80 00 00 10 00 00 28 AF 00 00 00 02   ...u......(.....
+000160  00 00 02 76 80 00 00 10 00 00 28 AF FF FF FF FF   ...v......(.....
+

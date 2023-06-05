@@ -1,0 +1,112 @@
+﻿-----------------Detailed Decode--------------------
+S1 Application Part
+    0... .... = PDU Extension: no present(0x00)
+    .00. .... = Type of Message : initiatingMessage(0x00)
+    Procedure Code: id-InitialContextSetup(0x09)
+    00.. .... = CRITICALITY: reject(0x00)
+    Number of Octets in PDU: 0x117
+    0... .... = Message Extension: no present(0x00)
+    Number IEs in PDU: 0x09
+    MME UE S1AP ID IE
+        id-MME-UE-S1AP-ID: 0x00
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x05
+        MME-UE-S1AP-ID: 83934846
+    eNB UE S1AP ID IE
+        id-eNB-UE-S1AP-ID: 0x08
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x04
+        ENB-UE-S1AP-ID: 4195169
+    Ueaggregate Maximum Bit Rate IE
+        id-Ueaggregate Maximum Bit Rate: 0x42
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x0A
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = IE Extension: no present(0x00)
+        UEaggregateMaximumBitRateDL: 2048000000 (bps)
+        UEaggregateMaximumBitRateUL: 2048000000 (bps)
+    E RAB To Be Setup List Ctxt SUReq IE
+        id-E-RABToBeSetupListCtxtSUReq: 0x18
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0xAD
+        Number of E-RABToBeSetupListCtxtSUReq : 0x01
+        1. E-RABToBeSetupListCtxtSUReq
+            id-E-RABToBeSetupItemCtxtSUReq: 0x34
+            00.. .... = CRITICALITY: reject(0x00)
+            Number of Octets in IE: 0xA7
+            0... .... = Message Extension: no present(0x00)
+            .1.. .... = NasPdu: present(0x01)
+            ..0. .... = IE Extension: no present(0x00)
+            .... 0101 = E-RAB-ID: 5
+            E-RABLevelQoSParameters
+                0... .... = Message Extension: no present(0x00)
+                .0.. .... = GbrQosInformation: no present(0x00)
+                ..0. .... = IE Extension: no present(0x00)
+                QCI: 9
+                AllocationRetentionPriority
+                    0... .... = Message Extension: no present(0x00)
+                    .0.. .... = IE Extension: no present(0x00)
+                    ..00 01.. = PriorityLevel: 1
+                    .... ..1. = Pre-emptionCapability: may-trigger-pre-emption(0x01)
+                    .... ...1 = Pre-emptionVulnerability: pre-emptable(0x01)
+            TransportLayerAddress: 192.168.56.3
+            GTP-TEID: 21 F9 00 34 (Hex)
+            NAS-PDU: 27 6A AF A6 45 20 07 42 02 49 0C 03 05 F2 41 2C 6B 00 00 27 0F 03 EF 00 69 52 15 C1 01 09 17 03 6D 6D 75 06 6D 6E 63 30 31 34 06 6D 63 63 35 30 32 04 67 70 72 73 05 01 0A 09 14 0F 5D 01 00 30 10 23 91 1F 91 97 FE FE 46 48 00 00 00 FA 00 FA 00 32 03 81 5E 06 FF FF 00 00 08 08 58 32 27 22 80 80 21 10 03 01 00 10 81 06 0A 00 03 C8 83 06 0A 00 04 C8 00 0D 04 0A 00 03 C8 00 0D 04 0A 00 04 C8 50 0B F6 05 F2 41 80 00 10 C0 00 B7 08 17 2C 59 2C 64 01 01 F0 (Hex)
+    UE Security Capabilities IE
+        id-UESecurityCapabilities: 0x6B
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x05
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = IE Extension: no present(0x00)
+        ..01 1100 0000 0000 000. .... = EncryptionAlgorithms: E0 00 (Hex)
+        ...0 1110 0000 0000 0000 .... = IntegrityProtectionAlgorithms: E0 00 (Hex)
+    Security Key IE
+        id-SecurityKey: 0x49
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x20
+        SecurityKey: 08 2B 40 F7 38 0F BF 8D 3E F5 FB 16 36 FE 01 A8 95 45 72 D0 12 3E 53 7A 37 2A AD 6D 81 F3 0D 2C (Hex)
+    Handover Restriction List IE
+        id-HandoverRestrictionList: 0x29
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x04
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = Equivalent PLMNs: no present(0x00)
+        ..0. .... = ForbiddenTAs: no present(0x00)
+        ...0 .... = ForbiddenLAs: no present(0x00)
+        .... 0... = ForbiddenInterRATs: no present(0x00)
+        .... .0.. = IE Extension: no present(0x00)
+        Serving PLMN: 05 F2 41 (Hex)
+    SRVCC Operation Possible IE
+        id-SRVCCOperationPossible: 0x7C
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x01
+        0... .... = SRVCCOperationPossible: possible(0x00)
+    NR UE Security Capabilities IE
+        id-NRUESecurityCapabilities: 0x10D
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x05
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = IE Extension: no present(0x00)
+        ..01 1100 0000 0000 000. .... = NREncryptionAlgorithms: E0 00 (Hex)
+        ...0 1110 0000 0000 0000 .... = NRIntegrityProtectionAlgorithms: E0 00 (Hex)
+
+-----------------Primitive Code---------------------
+000000  00 09 00 81 17 00 00 09 00 00 00 05 C0 05 00 BE   ................
+000010  7E 00 08 00 04 80 40 03 61 00 42 00 0A 18 7A 12   ~.....@.a.B...z.
+000020  00 00 60 7A 12 00 00 00 18 00 80 AD 00 00 34 00   ..`z..........4.
+000030  80 A7 45 00 09 07 0F 80 C0 A8 38 03 21 F9 00 34   ..E.......8.!..4
+000040  80 97 27 6A AF A6 45 20 07 42 02 49 0C 03 05 F2   ..'j..E .B.I....
+000050  41 2C 6B 00 00 27 0F 03 EF 00 69 52 15 C1 01 09   A,k..'....iR....
+000060  17 03 6D 6D 75 06 6D 6E 63 30 31 34 06 6D 63 63   ..mmu.mnc014.mcc
+000070  35 30 32 04 67 70 72 73 05 01 0A 09 14 0F 5D 01   502.gprs......].
+000080  00 30 10 23 91 1F 91 97 FE FE 46 48 00 00 00 FA   .0.#......FH....
+000090  00 FA 00 32 03 81 5E 06 FF FF 00 00 08 08 58 32   ...2..^.......X2
+0000a0  27 22 80 80 21 10 03 01 00 10 81 06 0A 00 03 C8   '"..!...........
+0000b0  83 06 0A 00 04 C8 00 0D 04 0A 00 03 C8 00 0D 04   ................
+0000c0  0A 00 04 C8 50 0B F6 05 F2 41 80 00 10 C0 00 B7   ....P....A......
+0000d0  08 17 2C 59 2C 64 01 01 F0 00 6B 00 05 1C 00 0E   ..,Y,d....k.....
+0000e0  00 00 00 49 00 20 08 2B 40 F7 38 0F BF 8D 3E F5   ...I. .+@.8...>.
+0000f0  FB 16 36 FE 01 A8 95 45 72 D0 12 3E 53 7A 37 2A   ..6....Er..>Sz7*
+000100  AD 6D 81 F3 0D 2C 00 29 40 04 00 05 F2 41 00 7C   .m...,.)@....A.|
+000110  40 01 00 01 0D 40 05 1C 00 0E 00 00               @....@......    
+

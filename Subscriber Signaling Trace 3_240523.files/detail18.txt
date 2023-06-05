@@ -1,0 +1,10 @@
+﻿-----------------Detailed Decode--------------------
+Activate default EPS bearer context accept
+    0101 .... = EPS bearer identity: 0x05
+    .... 0010 = Protocol discriminator: EPS session management messages (0x02)
+    Procedure transaction identity: 0x00
+    ESM Message Type: Activate default EPS bearer context accept (0xC2)
+
+-----------------Primitive Code---------------------
+000000  52 00 C2                                          R..             
+

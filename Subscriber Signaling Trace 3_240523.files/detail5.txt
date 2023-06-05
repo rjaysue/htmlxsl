@@ -1,0 +1,52 @@
+﻿-----------------Detailed Decode--------------------
+S1 Application Part
+    0... .... = PDU Extension: no present(0x00)
+    .00. .... = Type of Message : initiatingMessage(0x00)
+    Procedure Code: id-initialUEMessage(0x0C)
+    01.. .... = CRITICALITY: ignore(0x01)
+    Number of Octets in PDU: 0x7F
+    0... .... = Message Extension: no present(0x00)
+    Number IEs in PDU: 0x05
+    eNB UE S1AP ID IE
+        id-eNB-UE-S1AP-ID: 0x08
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x04
+        ENB-UE-S1AP-ID: 4195169
+    NAS PDU IE
+        id-NAS-PDU: 0x1A
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x55
+        NAS-PDU: 17 33 42 3F 30 8F 07 41 22 0B F6 05 F2 41 80 00 10 F0 00 B7 08 07 F0 F0 C0 C0 1D 00 00 00 05 02 15 D0 31 D1 52 05 F2 41 2C 6B 5C 08 02 31 03 75 F0 3E 90 11 03 57 58 B2 20 0B 60 14 34 E2 91 81 00 12 3E 80 21 40 08 00 02 1F 00 04 02 60 04 5D 01 03 E0 C1 (Hex)
+    TAI IE
+        id-TAI: 0x43
+        00.. .... = CRITICALITY: reject(0x00)
+        Number of Octets in IE: 0x06
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = IE Extension: no present(0x00)
+        PLMNidentity: 05 F2 41 (Hex)
+        TAC: 2C 6B (Hex)
+    EUTRAN CGI IE
+        id-EUTRAN-CGI: 0x64
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x08
+        0... .... = Message Extension: no present(0x00)
+        .0.. .... = IE Extension: no present(0x00)
+        PLMNidentity: 05 F2 41 (Hex)
+        0000 0000 0011 1110 0111 0000 1011 .... = CellIdentity: 00 3E 70 B0 (Hex)
+    RRC Establishment Cause IE
+        id-RRC-Establishment-Cause: 0x86
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x01
+        0011 .... = RRC-Establishment-Cause: mo-Signalling(0x03)
+
+-----------------Primitive Code---------------------
+000000  00 0C 40 7F 00 00 05 00 08 00 04 80 40 03 61 00   ..@.........@.a.
+000010  1A 00 55 54 17 33 42 3F 30 8F 07 41 22 0B F6 05   ..UT.3B?0..A"...
+000020  F2 41 80 00 10 F0 00 B7 08 07 F0 F0 C0 C0 1D 00   .A..............
+000030  00 00 05 02 15 D0 31 D1 52 05 F2 41 2C 6B 5C 08   ......1.R..A,k\.
+000040  02 31 03 75 F0 3E 90 11 03 57 58 B2 20 0B 60 14   .1.u.>...WX. .`.
+000050  34 E2 91 81 00 12 3E 80 21 40 08 00 02 1F 00 04   4.....>.!@......
+000060  02 60 04 5D 01 03 E0 C1 00 43 00 06 00 05 F2 41   .`.].....C.....A
+000070  2C 6B 00 64 40 08 00 05 F2 41 00 3E 70 B0 00 86   ,k.d@....A.>p...
+000080  40 01 30                                          @.0             
+

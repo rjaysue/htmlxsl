@@ -1,0 +1,39 @@
+﻿-----------------Detailed Decode--------------------
+S1 Application Part
+    0... .... = PDU Extension: no present(0x00)
+    .01. .... = Type of Message : successfulOutcome(0x01)
+    Procedure Code: id-InitialContextSetup(0x09)
+    00.. .... = CRITICALITY: reject(0x00)
+    Number of Octets in PDU: 0x27
+    0... .... = Message Extension: no present(0x00)
+    Number IEs in PDU: 0x03
+    MME UE S1AP ID IE
+        id-MME-UE-S1AP-ID: 0x00
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x05
+        MME-UE-S1AP-ID: 83934846
+    eNB UE S1AP ID IE
+        id-eNB-UE-S1AP-ID: 0x08
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x04
+        ENB-UE-S1AP-ID: 4195169
+    E RAB Setup List Ctxt SURes IE
+        id-E-RABSetupListCtxtSURes: 0x33
+        01.. .... = CRITICALITY: ignore(0x01)
+        Number of Octets in IE: 0x0F
+        Number of E-RAB Setup Item IEs: 0x01
+        1. E-RAB Setup Item IEs
+            id-E-RABSetupItemCtxtSURes: 0x32
+            01.. .... = CRITICALITY: ignore(0x01)
+            Number of Octets in IE: 0x0A
+            0... .... = Message Extension: no present(0x00)
+            .0.. .... = IE Extension: no present(0x00)
+            ...0 101. = E-RAB-ID: 5
+            TransportLayerAddress: 192.168.8.86
+            GTP-TEID: 03 40 03 61 (Hex)
+
+-----------------Primitive Code---------------------
+000000  20 09 00 27 00 00 03 00 00 40 05 C0 05 00 BE 7E    ..'.....@.....~
+000010  00 08 40 04 80 40 03 61 00 33 40 0F 00 00 32 40   ..@..@.a.3@...2@
+000020  0A 0A 1F C0 A8 08 56 03 40 03 61                  ......V.@.a     
+

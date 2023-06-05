@@ -1,0 +1,131 @@
+﻿-----------------Detailed Decode--------------------
+Attach request
+    0000 .... = Security Header Type: Plain NAS message
+    .... 0111 = Protocol discriminator: EPS mobility management messages (0x07)
+    EMM Message Type: Attach request (0x41)
+    0010 .... = NAS key set identifier
+        0... .... = native security context (0x00)
+        .010 .... = NAS key set identifier: 0x02
+    .... 0010 = Attach Type
+        .... 0... = Spare: 0x00
+        .... .010 = Attach Type: combined EPS/IMSI attach (0x02)
+    EPS Mobile ID
+        Length of GUTI: 11 (Bytes)
+        1111 .... = Spare: 0x00
+        .... 0... = odd/even indic: even number of identity digits (0x00)
+        .... .110 = Type of identity: GUTI (0x06)
+        GUTI: 05 F2 41 80 00 10 F0 00 B7 08 (Hex)
+    UE Network Capability
+        Length of UE Network Capability: 7 (Bytes)
+        111. .... = EEA0 - EEA2: 1 1 1
+        ...1 0000 = EEA3 - EEA7: 1 0 0 0 0
+        111. .... = EIA0 - EIA2: 1 1 1
+        ...1 0000 = EIA3 - EIA7: 1 0 0 0 0
+        UEA0 - UEA7: 1 1 0 0 0 0 0 0
+        1... .... = UCS2: 0x01
+        .100 0000 = UIA1 - UIA7: 1 0 0 0 0 0 0
+        0001 .... = Spare: 0x01
+        .... 1... = LPP: 0x01
+        .... .1.. = LCS: 0x01
+        .... ..0. = 1xSR VCC: 0x00
+        .... ...1 = Spare: 0x01
+        0... .... = ePCO: 0x00
+        .0.. .... = HC-CP CIoT: 0x00
+        ..0. .... = ERW_OPDN: 0x00
+        ...0 .... = S1-UDATA: 0x00
+        .... 0... = UP-CIOT: 0x00
+        .... .0.. = CP-CIOT: 0x00
+        .... ..0. = Proserelay: 0x00
+        .... ...0 = Prosedc: 0x00
+        00.. .... = Spare: 0x00
+        ..0. .... = N1mode: 0x00
+        ...0 .... = DCNR: 0x00
+        .... 0... = CPBACKOFF: 0x00
+        .... .0.. = RestricEC: 0x00
+        .... ..00 = Spare: 0x00
+    ESM Message container
+        Length of ESM Message container: 5 (Bytes)
+        Content of ESM Message container: 02 15 D0 31 D1 (Hex)
+    Last visited registered TAI
+        Value of TAI: 05 F2 41 2C 6B (Hex)
+    DRX Parameter
+        Split Page Cycle value: 0x08
+        0000 .... = ENG CN Specific DRX Cycle Length: CN Specific DRX cycle length coefficient not specified by the MS (0x00)
+        .... 0... = Split Page Cycle on CCCH Flag: Split pg cycle on CCCH is not supported by the mobile station (0x00)
+        .... .010 = Non-DRX Timer: max. 2 sec non-DRX mode after transfer state (0x02)
+    MS Network Capability
+        Ms Network Capability Length: 3 (Bytes)
+        0... .... = GPRS Encryption Algorithm GEA/1: not Available (0x00)
+        .1.. .... = SM Capabilities via Dedicated channels: Support (0x01)
+        ..1. .... = SM Capabilities via GPRS Channels: Support (0x01)
+        ...1 .... = UCS2 Support: ME has no preference for the default alphabet over UCS2 (0x01)
+        .... 01.. = Supplementary Service Screening Indicator: capability of handling of ellipsis notation and phase 2 error handling (0x01)
+        .... ..0. = SoLSA Capability: not Support (0x00)
+        .... ...1 = Revision Level Indicator: supporting R99+ protocol (0x01)
+        1... .... = BSS Packet Flow Procedure Feature Mode: Support (0x01)
+        .111 000. = GPRS Encryption Algorithm GEA/2-7 (0=notAvailable 1=Available): 111000
+        .... ...0 = Location request Notification via PS Domain: not Support (0x00)
+        0... .... = PS Inter-RAT HO to UTRAN Iu Mode Capability: not Support (0x00)
+        .0.. .... = PS inter-RAT HO to E-UTRAN S1 Mode Capability: not Support (0x00)
+        ..1. .... = EMM Combined procedures Capability: Support (0x01)
+        ...1 .... = ISR Support: Support (0x01)
+        .... 1... = SRVCC to GERAN/UTRAN Capability: Support (0x01)
+        .... .1.. = EPC Capability: Support (0x01)
+        .... ..10 = Spare: 0x01
+    TMSI Status
+        .... 000. = Spare: 0x00
+        .... ...0 = no valid TMSI available (0x00)
+    Mobile station classmark 2
+        Length of Mobile station classmark 2: 3 (Bytes)
+        0... .... = Spare: 0x00
+        .10. .... = Used by mobile stations supporting R99 or later versions of the protocol (0x02)
+        ...1 .... = "Controlled Early Classmark Sending" option is implemented in the MS (0x01)
+        .... 0... = encryption algorithm A5/1 available (0x00)
+        .... .111 = RF Power capability is irrelevant in this information element (0x07)
+        0... .... = Spare: 0x00
+        .1.. .... = PS capability present (0x01)
+        ..01 .... = capability of handling of ellipsis notation and phase 2 error handling (0x01)
+        .... 1... = Mobile station supports mobile terminated point to point SMS (0x01)
+        .... .0.. = no VBS capability or no notifications wanted (0x00)
+        .... ..0. = no VGCS capability or no notifications wanted (0x00)
+        .... ...0 = FC Frequency Capability : The MS does not support the E-GSM or R-GSM band (0x00)
+        1... .... = The MS supports options that are indicated in classmark 3 IE (0x01)
+        .0.. .... = Spare: 0x00
+        ..1. .... = location request notification via CS domain supported (0x01)
+        ...1 .... = the ME has no preference between the use of the default alphabet and the use of UCS2. (0x01)
+        .... 0... = The ME does not support SoLSA. (0x00)
+        .... .0.. = "Network initiated MO CM connection request" not supported (0x00)
+        .... ..1. = encryption algorithm A5/3 available (0x01)
+        .... ...0 = encryption algorithm A5/2 not available (0x00)
+    Mobile station classmark 3
+        Length of Mobile station classmark 3: 11 (Bytes)
+        Content of Mobile station classmark 3: 60 14 34 E2 91 81 00 12 3E 80 21
+    Supported Codec List
+        Length of Supported Codec List: 8 (Bytes)
+        System Identification 1: 0
+            Length Of Bitmap for SysID: 2
+            Codec Bitmap for SysID bits 1 to 8: 31
+            Codec Bitmap for SysID bits 9 to 16: 0
+        System Identification 2: 4
+            Length Of Bitmap for SysID: 2
+            Codec Bitmap for SysID bits 1 to 8: 96
+            Codec Bitmap for SysID bits 9 to 16: 4
+    Voice Domain per UE Usage Setting
+        Voice Domain per UE Usage Setting: 1 (Bytes)
+        0000 0... = Spare: 0x00
+        .... .0.. = voice centric (0x00)
+        .... ..11 = ims ps voice preferred,cs voice as secondary (0x03)
+    1110 .... = Old GUTI Type
+        .... 000. = Spare: 0x00
+        .... ...0 = Native GUTI (0x00)
+    Ms Network Feature Support
+        .... 000. = Spare: 0x00
+        .... ...1 = MS supports the extended periodic timer (0x01)
+
+-----------------Primitive Code---------------------
+000000  07 41 22 0B F6 05 F2 41 80 00 10 F0 00 B7 08 07   .A"....A........
+000010  F0 F0 C0 C0 1D 00 00 00 05 02 15 D0 31 D1 52 05   ............1.R.
+000020  F2 41 2C 6B 5C 08 02 31 03 75 F0 3E 90 11 03 57   .A,k\..1.u.>...W
+000030  58 B2 20 0B 60 14 34 E2 91 81 00 12 3E 80 21 40   X. .`.4.....>.!@
+000040  08 00 02 1F 00 04 02 60 04 5D 01 03 E0 C1         .......`.]....  
+
